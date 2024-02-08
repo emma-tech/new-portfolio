@@ -13,10 +13,10 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li className="app-li">
-              <Link to="/about">About</Link>
+              <Link to="/experience">Experience</Link>
             </li>
             <li className="app-li">
-              <Link to="/contact">Contact</Link>
+              <Link to="/projects">Projects</Link>
             </li>
           </ul>
         </nav>
