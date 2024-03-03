@@ -1,1 +1,97 @@
 /* Star Here */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --peach: #ffbe98;
+  --lightpeach: #ffe2cc;
+  --black: #242424;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #242424;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+
+p,
+::placeholder {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: var(--black);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Timeline */
+.vertical-timeline {
+  margin-top: 2em;
+  padding: 6em 0;
+}
+
+.vertical-timeline-element-content {
+  background-color: #FFE2CC; /*#252525;*/
+  color: var(--black); /* #fff0e5;*/
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.vertical-timeline-element-content-arrow {
+  border: 7px solid transparent;
+  border-right: 7px solid #252525;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: none;
+  background-color: #252525;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.vertical-timeline-element-date {
+  color: #252525;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+}

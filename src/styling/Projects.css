@@ -1,35 +1,27 @@
 .projects {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .projects .projectTitle {
-  text-align: center;
-  color: #3e497a;
-  font-size: 60px;
-  font-weight: bolder;
+  font-size: 3rem;
 }
 
 .projectList {
-  width: 70vw;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* MENU ITEM STYLING */
+.projectList > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 50%; 
+  padding: 3rem 1.5rem;
+}
 
 .projectItem {
-  border-radius: 15px;
-  width: 300px;
-  height: 300px;
-  margin: 40px;
+  width: 100%;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
 .projectItem:hover {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
@@ -38,19 +30,18 @@
 }
 
 .projectItem .bgImage {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
   width: 100%;
-  height: 200px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.projectItem h1 {
+.projectItem h2 {
   font-size: 25px;
 }
 
+/* Media queries 
 @media only screen and (max-width: 1300px) {
   .projectList {
     grid-template-columns: 1fr 1fr;
@@ -72,3 +63,4 @@
     height: 300px;
   }
 }
+*/
