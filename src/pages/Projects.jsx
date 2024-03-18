@@ -3,9 +3,12 @@ import { ProjectList } from "../helpers/ProjectList";
 
 import "../styling/Projects.css";
 import { PageWrapper, PageTitle } from "../styling/GlobalStyling";
+import DefaultFooter from "../components/DefaultFooter";
 
 function Projects() {
   return (
+    <>
+    
     <PageWrapper>
        <PageTitle>My Work</PageTitle>
       <div className="projects">
@@ -25,6 +28,8 @@ function Projects() {
         </div>
       </div>
     </PageWrapper>
+    <DefaultFooter />
+    </>
   );
 }
 

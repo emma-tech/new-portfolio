@@ -1,12 +1,16 @@
 //import styled from "styled-components";
 
 // Styling
-import { PageWrapper, PageTitle } from "../styling/GlobalStyling.js";
+import { PageWrapper, PageTitle, TextWrapper } from "../styling/GlobalStyling.js";
+
+import DefaultFooter from "../components/DefaultFooter.jsx";
 
 function About() {
   return (
+    <>
     <PageWrapper>
       <PageTitle>About me</PageTitle>
+      <TextWrapper>
       <p>
         Hi there! Welcome to my portfolio I’m Emma, a UX designer with a
         background in frontend development and communication. My passion is to
@@ -35,7 +39,10 @@ function About() {
       <p>
         Figma and FigJam | Visual Studio Code | GitHub | Notion | Sitevision | WordPress
       </p>
+      </TextWrapper>
     </PageWrapper>
+    <DefaultFooter />
+    </>
   );
 }
 

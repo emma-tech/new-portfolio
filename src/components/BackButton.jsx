@@ -1,31 +1,27 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { ArrowLeft } from "react-bootstrap-icons";
 
 const BackButtonStyled = styled.button`
-  background-color: #007bff;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: var(--black);
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #0056b3;
-  }
 `;
 
 const BackButton = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const goBack = () => {
-    history.goBack(); // Go back one step in history
+    navigate(-1); // Navigate back one step
   };
 
   return (
     <BackButtonStyled onClick={goBack}>
-      Back
+      <ArrowLeft color="#252525" size={20} title="Arrow" />
+      Back to projects
     </BackButtonStyled>
   );
 };

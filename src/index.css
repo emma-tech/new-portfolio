@@ -17,9 +17,20 @@ html {
 }
 
 :root {
+  --black: #252525;
+  --white: #fffbf9;
   --peach: #ffbe98;
-  --lightpeach: #ffe2cc;
-  --black: #242424;
+  --peachlight: #ffe2cc;
+  --peachextralight: #fff0e5;
+  --pink: #ff9f98;
+}
+
+*:focus-visible {
+	/* inner indicator */
+	outline: 2px var(--white) solid;
+	outline-offset: 0;
+	/* outer indicator */
+	box-shadow: 0 0 0 4px var(--black);
 }
 
 body {
@@ -27,8 +38,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  height: 100vh;
-  color: #242424;
+  min-height: 100vh;
+  color: var(--black);
+  background-color: var(--white)
 }
 
 h1,
@@ -63,20 +75,20 @@ code {
 }
 
 .vertical-timeline-element-content {
-  background-color: #FFE2CC; /*#252525;*/
-  color: var(--black); /* #fff0e5;*/
+  background-color: var(--peachlight);
+  color: var(--black);
   border-radius: 0;
   box-shadow: none;
 }
 
 .vertical-timeline-element-content-arrow {
   border: 7px solid transparent;
-  border-right: 7px solid #252525;
+  border-right: 7px solid var(--peachlight);
 }
 
 .vertical-timeline-element-icon {
   box-shadow: none;
-  background-color: #252525;
+  background-color: var(--black);
   width: 30px;
   height: 30px;
   margin-top: 10px;
@@ -84,7 +96,7 @@ code {
 }
 
 .vertical-timeline-element-date {
-  color: #252525;
+  color: var(--black);
 }
 
 @media only screen and (min-width: 1170px) {

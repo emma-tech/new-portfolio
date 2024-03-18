@@ -1,25 +1,20 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Routes} from "react-router-dom";
 import routes from "./routes/routes";
 
-/*Styling
-import {
-  Nav,
-  NavLinks,
-  StyledLink,
-  LogoLink,
-} from "./styling/GlobalStyling.js"; 
-*/
+//Helpers
+import ScrollToTop from "./helpers/ScrollToTop.jsx";
 
+//Components
 import Header from "./components/Header.jsx";
+
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
       <Header />
-        <main>
           <Routes>{routes}</Routes>
-        </main>
       </BrowserRouter>
     </>
   );

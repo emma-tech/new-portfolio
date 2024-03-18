@@ -10,12 +10,16 @@ import "react-vertical-timeline-component/style.min.css";
 // Styling
 import { PageWrapper, PageTitle} from "../styling/GlobalStyling.js";
 
+//Components
+import DefaultFooter from "../components/DefaultFooter.jsx";
+
 function Experience() {
   return (
+    <>
     <PageWrapper>
       <PageTitle>Experience</PageTitle>
       <div className="experience">
-        <VerticalTimeline lineColor="#252525">
+        <VerticalTimeline lineColor="var(--black)">
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="aug 2023 - jan 2024"
@@ -59,6 +63,8 @@ function Experience() {
         </VerticalTimeline>
       </div>
     </PageWrapper>
+    <DefaultFooter />
+    </>
   );
 }
 

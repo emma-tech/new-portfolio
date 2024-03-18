@@ -41,6 +41,21 @@
   font-size: 25px;
 }
 
+@media screen and (max-width: 1200px) {
+
+  .projectList {
+    flex-direction: column;
+  }
+
+  .projectList > div {
+    padding: 2rem 0;
+  }
+
+  .projectItem .bgImage { 
+    height: 300px;
+  }
+}
+
 /* Media queries 
 @media only screen and (max-width: 1300px) {
   .projectList {
