@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ArrowRight } from "react-bootstrap-icons";
-import Blob from "../assets/Blob.svg";
+import Blob from "../assets/blob.svg";
 
 const Footer = styled.footer`
   display: flex;
