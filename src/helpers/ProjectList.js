@@ -3,7 +3,7 @@ import Yoga from "../assets/mockup-yoga.jpeg";
 import RegionÖstergötland from "../assets/rog_folktandvarden.png";
 import Nassjo from "../assets/nassjo.png";
 import Feeder from "../assets/feeder_mockup.jpeg";
-import Minimark from "../assets/minimark.png";
+import Minimark from "../assets/Minimark.png";
 
 
 
