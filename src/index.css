@@ -81,10 +81,10 @@ code {
 }
 
 .vertical-timeline-element-content {
-  background-color: var(--peachlight);
+  background-color: var(--peachextralight);
   color: var(--black);
   border-radius: 0;
-  box-shadow: none;
+  box-shadow: 10px 10px 0 var(--peach);
 }
 
 .vertical-timeline-element-content h2 {
@@ -92,8 +92,9 @@ code {
 }
 
 .vertical-timeline-element-content-arrow {
-  border: 7px solid transparent;
-  border-right: 7px solid var(--peachlight);
+ /* border: 7px solid transparent; */
+ /* border-right: 7px solid var(--peachlight); */
+  display: none;
 }
 
 .vertical-timeline-element-icon {
