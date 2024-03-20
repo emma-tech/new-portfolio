@@ -78,7 +78,7 @@ function Experience() {
               <h2 className="vertical-timeline-element-title">UX designer</h2>
               <p>
                 I&apos;m currently looking for a new role in UX/UI design while
-                working on some pro-bono projects
+                working on some freelance projects.
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>

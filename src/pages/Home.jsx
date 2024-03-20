@@ -1,12 +1,28 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom"
+import { motion } from "framer-motion";
 import Emoji from "../components/Emoji";
-import ProfilePicture from "../assets/emma2.jpg";
+import ProfilePicture from "../assets/emma1.jpg";
 import { Github, Linkedin, Medium } from "react-bootstrap-icons";
 import HomeFooter from "../components/HomeFooter";
 
 function Home() {
   return (
-    <>
+    <motion.div
+    className="card"
+    initial={{
+      opacity: 0,
+      y: 10,
+    }}
+    whileInView={{
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+      },
+    }}
+    viewport={{ once: true }}
+  >
       <HomeWrapper>
         <HeroSection1>
           <HeroHeading>
@@ -39,14 +55,19 @@ function Home() {
           </Icons>
         </HeroSection1>
         <HeroInnerWrapper>
-          <HeroSection2></HeroSection2>
+          <HeroSection2>
+          <Buttons>
+          <StyledButton to="/work">My work</StyledButton>
+          <StyledButton to="/about" role="button">About me</StyledButton>
+          </Buttons>
+          </HeroSection2>
           <HeroSection3>
             <AboutImg src={ProfilePicture} />
           </HeroSection3>
         </HeroInnerWrapper>
       </HomeWrapper>
       <HomeFooter />
-    </>
+    </motion.div>
   );
 }
 
@@ -144,7 +165,49 @@ const HeroSection2 = styled.div`
   background-color: var(--peach);
 
   @media screen and (max-width: 1024px) { 
-    display: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: auto;
+   margin: 6rem 0;
+   background-color: transparent;
+  }
+`;
+
+const Buttons = styled.div`
+  display: none;
+
+  @media screen and (max-width: 1024px) { 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+`;
+
+const StyledButton = styled(Link)`
+  display: none;
+
+  @media screen and (max-width: 1024px) { 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid var(--black);
+   border-radius: 2.5rem;
+   margin: 1.5rem;
+   padding: 0.5rem 3rem;
+   text-decoration: none;
+   font-size: 1.5rem;
+   transition: all 0.5s ease;
+   cursor: pointer;
+   box-shadow: 5px 5px 0 var(--peach);
+
+   &:hover {
+    background-color: var(--black);
+    color: var(--peachextralight);
+    box-shadow: 2px 2px 0 var(--peach);
+   }
   }
 `;
 
@@ -155,11 +218,14 @@ const HeroSection3 = styled.div`
   width: 50vw;
   background-color: var(--peachlight);
 
-  @media screen and (max-width: 1024px) { 
-    justify-content: center;
+  @media screen and (max-width: 1024px) {
+    /*justify-content: center; 
     margin: 2rem 0;
     width: 100%;
     height: 100%;
+    background-color: transparent;
+    */
+    display: none;
   }
 `;
 
@@ -172,9 +238,8 @@ const AboutImg = styled.img.attrs(({ src }) => ({
   object-fit: cover;
 
   @media screen and (max-width: 1024px) { 
-    width: 100%;
-    height: 100%;
-    box-shadow: 10px 10px 0 var(--peach);
+   /*box-shadow: 10px 10px 0 var(--peach);*/
+   display: none;
   }
 `;
 

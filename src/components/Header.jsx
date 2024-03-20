@@ -77,6 +77,7 @@ const StyledLink = styled(NavLink)`
   &.active {
     text-decoration-style: solid;
     color: var(--black);
+    font-weight: 500;
   }
 
   @media screen and (max-width: 1024px) {
