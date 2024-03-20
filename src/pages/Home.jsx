@@ -168,7 +168,7 @@ const HeroSection2 = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 100vw;
+   width: 100%;
    height: auto;
    margin: 6rem 0;
    background-color: transparent;
