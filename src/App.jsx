@@ -1,3 +1,5 @@
+//import { useState } from 'react';
+//import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter, Routes} from "react-router-dom";
 import routes from "./routes/routes";
 
@@ -9,14 +11,13 @@ import Header from "./components/Header.jsx";
 
 
 function App() {
+
   return (
-    <>
       <BrowserRouter>
       <ScrollToTop />
-      <Header />
+      <Header/>
           <Routes>{routes}</Routes>
       </BrowserRouter>
-    </>
   );
 }
 

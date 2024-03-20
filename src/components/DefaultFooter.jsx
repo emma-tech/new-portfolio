@@ -20,6 +20,7 @@ const FooterText = styled.div`
 const FooterHeading = styled.h2`
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
+  margin-top: 0;
 `;
 
 const FooterImg = styled.img`
@@ -57,7 +58,7 @@ function DefaultFooter() {
         <FooterText>
           <FooterHeading>Contact me</FooterHeading>
           <FooterLink href="mailto:emma.urman@gmail.com">
-            Send me an Email
+            Send an email
             <ArrowRight color="#252525" size={20} title="Arrow" />
           </FooterLink>
           <FooterLink

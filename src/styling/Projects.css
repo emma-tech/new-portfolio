@@ -39,6 +39,10 @@
 
 .projectItem h2 {
   font-size: 25px;
+  padding: 0 0.5rem;
+}
+.projectItem p {
+  padding: 0.5rem;
 }
 
 @media screen and (max-width: 1200px) {

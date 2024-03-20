@@ -45,7 +45,7 @@ const StyledLink = styled(NavLink)`
   margin-bottom: 1.5rem;
   max-width: fit-content;
   color: var(--black);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: relative;
   text-decoration-line: underline;
   text-decoration-style: wavy;
@@ -118,7 +118,7 @@ function Header () {
           <Water size={40} />
         </StyledHamburger>
         <MenuLinks>
-          <StyledLink to="/projects">My work</StyledLink>
+          <StyledLink to="/work">My work</StyledLink>
           <StyledLink to="/experience">Experience</StyledLink>
           <StyledLink to="/about">About me</StyledLink>
         </MenuLinks>

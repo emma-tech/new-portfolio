@@ -26,11 +26,11 @@ html {
 }
 
 *:focus-visible {
-	/* inner indicator */
-	outline: 2px var(--white) solid;
-	outline-offset: 0;
-	/* outer indicator */
-	box-shadow: 0 0 0 4px var(--black);
+  /* inner indicator */
+  outline: 2px var(--white) solid;
+  outline-offset: 0;
+  /* outer indicator */
+  box-shadow: 0 0 0 4px var(--black);
 }
 
 body {
@@ -40,17 +40,23 @@ body {
   font-weight: 400;
   min-height: 100vh;
   color: var(--black);
-  background-color: var(--white)
+  background-color: var(--white);
 }
 
-h1,
+h1 {
+  margin: 2rem 0 0.5rem 0;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
+  margin-top: 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
 }
 
 p,
@@ -81,6 +87,10 @@ code {
   box-shadow: none;
 }
 
+.vertical-timeline-element-content h2 {
+  color: var(--black);
+}
+
 .vertical-timeline-element-content-arrow {
   border: 7px solid transparent;
   border-right: 7px solid var(--peachlight);
@@ -105,5 +115,5 @@ code {
     height: 30px;
     margin-top: 15px;
     margin-left: -15px;
-}
+  }
 }

@@ -22,17 +22,17 @@ function ProjectItem({ image, name, skills, id }) {
       <div
         className="projectItem"
         onClick={() => {
-          navigate("/project/" + id);
+          navigate("/work/project/" + name +"/"+ id);
         }}
         onKeyDown={() => {
-          navigate("/project/" + id);
+          navigate("/work/project/" + name +"/"+ id);
         }}
       >
         <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
         <h2
           tabIndex="0"
           onClick={() => {
-            navigate("/project/" + id);
+            navigate("/work/project/" + name +"/"+ id);
           }}
         >
           {" "}

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Emoji from "../components/Emoji";
-import ProfilePicture from "../assets/emma.jpg";
+import ProfilePicture from "../assets/emma2.jpg";
 import { Github, Linkedin, Medium } from "react-bootstrap-icons";
 import HomeFooter from "../components/HomeFooter";
 
@@ -82,8 +82,8 @@ const HeroSection1 = styled.div`
 `;
 
 const HeroHeading = styled.h1`
-  font-size: 4rem;
-  padding: 0 0 4rem 2rem;
+  font-size: 3.5rem;
+  padding: 0 1rem 4rem 2rem;
 
   @media screen and (max-width: 1024px) {
     font-size: 2.5rem;
@@ -150,7 +150,7 @@ const HeroSection2 = styled.div`
 
 const HeroSection3 = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   height: 60vh;
   width: 50vw;
   background-color: var(--peachlight);

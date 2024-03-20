@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { ArrowRight } from "react-bootstrap-icons";
 import Blob from "../assets/blob.svg";
-import Emoji from "./Emoji";
 
 const Footer = styled.footer`
   display: flex;
@@ -36,6 +35,7 @@ const FooterText = styled.div`
 const FooterHeading = styled.h2`
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
+  margin-top: 0;
 `;
 
 const FooterImg = styled.img`
@@ -72,9 +72,9 @@ function HomeFooter() {
       <Footer>
         <FooterImg src={Blob} alt="Blob" />
         <FooterText>
-          <FooterHeading> Contact me <Emoji symbol="📲" label="iPhone" /></FooterHeading>
+          <FooterHeading> Contact me </FooterHeading>
           <FooterLink href="mailto:emma.urman@gmail.com">
-            Send me an email
+            Send an email
             <ArrowRight color="#252525" size={20} title="Arrow" />
           </FooterLink>
           <FooterLink

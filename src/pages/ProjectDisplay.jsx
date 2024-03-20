@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { ProjectList } from "../helpers/ProjectList";
+import { Projects } from "../helpers/ProjectList";
 /*import BackButton from "../components/BackButton";*/
 import { PageWrapper, PageTitle } from "../styling/GlobalStyling";
 import DefaultFooter from "../components/DefaultFooter";
@@ -8,15 +8,15 @@ import styled from "styled-components";
 
 function ProjectDisplay() {
   const { id } = useParams();
-  const project = ProjectList[id];
+  const project = Projects[id];
 
   return (
     <>
       <PageWrapper>
         <ProjectWrapper>
           <PageTitle> {project.name}</PageTitle>
-          <ProjectText>{project.text}</ProjectText>
           <ProjectImg src={project.image} alt={project.imageAlt} />
+          <ProjectText>{project.text}</ProjectText>
           <ProjectHeading>Skills</ProjectHeading>
           <ProjectSkills>
             {project.skills}
@@ -45,6 +45,10 @@ const ProjectWrapper = styled.div`
   justify-content: left;
   flex-direction: column;
   padding: 4rem 8rem;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0;
+  }
 `;
 
 const ProjectImg = styled.img`
