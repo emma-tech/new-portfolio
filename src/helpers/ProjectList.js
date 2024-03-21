@@ -1,5 +1,5 @@
-import Thingtesting from "../assets/mockup-thingtesting.jpeg";
-import Thingtesting2 from "../assets/mockup-thingtesting2.png";
+//import Thingtesting from "../assets/mockup-thingtesting.jpeg";
+//import Thingtesting2 from "../assets/mockup-thingtesting2.png";
 import Yoga from "../assets/mockup-yoga.jpeg";
 import RegionÖstergötland from "../assets/rog_folktandvarden.png";
 import Nassjo from "../assets/nassjo.png";
@@ -31,7 +31,7 @@ export const CaseStudys = [
     name: "Final UX Project Technigo",
     image: FinalProject
   },
-  */
+  
   {
     name: "Thingtesting Case Study",
     image: Thingtesting,
@@ -50,6 +50,7 @@ export const CaseStudys = [
     feedback2: "Feedback",
     links: [{name: 'Mockup/prototype in Figma', url: 'https://www.figma.com/proto/K2iWgOEIrX5aPfuCDJxeeZ/%F0%9F%90%A7%C2%A0Team-Penguins-%F0%9F%90%A7?kind=proto&node-id=1348-3932&page-id=1303%3A5945&scaling=scale-down&starting-point-node-id=1348%3A3932&t=OM1bydDT3eIi1mZJ-1&type=design&viewport=580%2C407%2C0.05'}]
   }
+  */
 ]
 
 export const Projects = [
