@@ -57,6 +57,9 @@ const Icons = styled.div`
     width: 40px;
   }
 `;
+const Section = styled.div`
+  margin: 2rem 0;
+`;
 
 function Home() {
   return (
@@ -111,14 +114,17 @@ function Home() {
           </Icons>
         </Hero>
         <UpcomingProjectsList></UpcomingProjectsList>
-        <InternalLink to="/portfolio">
-          Portfolio
-          <ArrowRight color="#252525" size={40} title="ArrowRight" />
-        </InternalLink>
-        <InternalLink to="/about">
-          About me
-          <ArrowRight color="#252525" size={40} title="ArrowRight" />
-        </InternalLink>
+
+        <Section>
+          <InternalLink to="/portfolio">
+            Portfolio
+            <ArrowRight color="#252525" size={40} title="ArrowRight" />
+          </InternalLink>
+          <InternalLink to="/about">
+            About me
+            <ArrowRight color="#252525" size={40} title="ArrowRight" />
+          </InternalLink>
+        </Section>
       </motion.div>
     </>
   );

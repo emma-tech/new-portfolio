@@ -62,7 +62,7 @@ function Contact() {
       <ContactDiv>
         <ContactContent>
           <ContactHeading>
-            <Emoji symbol="🪩" label="disco" /> Do you want to work with me or
+            Do you want to work with me or
             collaborate on a project? <Emoji symbol="🪩" label="disco" />
           </ContactHeading>
           <ContactLink href="mailto:emma.urman@gmail.com">
