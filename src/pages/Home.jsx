@@ -14,7 +14,6 @@ import { InternalLink } from "../styling/GlobalStyling";
 
 // Styling
 const Hero = styled.div`
-  max-width: 80vw;
   border-bottom: 6px solid var(--purple);
   margin-bottom: 2rem;
 
