@@ -29,7 +29,7 @@ const HeroHeadingContainer = styled.div`
 
 const HeroHeading = styled.h1`
   font-size: 4rem;
-  margin: 5rem 0 0.5rem 0;
+  margin: 4rem 0 0.5rem 0;
 
   @media (min-width: 1200px) {
     font-size: 6rem;
