@@ -76,7 +76,7 @@ const StyledLink = styled(NavLink)`
   margin: 0 0 3rem 0;
   max-width: fit-content;
   color: var(--black);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   position: relative;
   text-decoration-line: underline;
   text-decoration-style: wavy;

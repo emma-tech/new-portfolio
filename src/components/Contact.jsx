@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Emoji from "../components/Emoji";
 
 // Icons
-import { ArrowRight } from "react-bootstrap-icons";
+import { ArrowRightCircleFill } from "react-bootstrap-icons";
 
 // Styling
 const ContactDiv = styled.div`
@@ -13,7 +13,7 @@ const ContactDiv = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 5rem;
+  margin: 4rem 0;
 `;
 
 const ContactContent = styled.div`
@@ -35,8 +35,10 @@ const ContactHeading = styled.h2`
 const ContactLink = styled.a`
   display: flex;
   align-items: center;
-  margin: 0.5rem 0;
-  text-underline-offset: 0.4rem;
+  margin: 1rem 0;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 0.6rem;
 
   @media (min-width: 1024px) {
     font-size: 1.2rem;
@@ -67,7 +69,7 @@ function Contact() {
           </ContactHeading>
           <ContactLink href="mailto:emma.urman@gmail.com">
             Send me an email
-            <ArrowRight color="#252525" size={20} title="Arrow" />
+            <ArrowRightCircleFill color="#252525" size={20} title="Arrow" />
           </ContactLink>
           <ContactLink
             href="https://www.linkedin.com/in/emmaurman/"
@@ -75,7 +77,7 @@ function Contact() {
             rel="noopener noreferrer"
           >
             Connect on LinkedIn
-            <ArrowRight color="#252525" size={20} title="Arrow" />
+            <ArrowRightCircleFill color="#252525" size={20} title="Arrow" />
           </ContactLink>
         </ContactContent>
       </ContactDiv>

@@ -12,12 +12,25 @@ const BackButtonStyled = styled.button`
   background-color: transparent;
   color: var(--black);
   border: none;
-  cursor: pointer;
   font-family: "Space Mono", monospace;
   font-size: 1rem;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 0.6rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
   svg {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover svg {
+    transform: translateX(-50%);
   }
 `;
 

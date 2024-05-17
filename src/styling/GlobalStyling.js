@@ -21,7 +21,7 @@ export const PageTitle = styled.h1`
   @media screen and (min-width: 1200px) {
     font-size: 5rem;
     text-underline-offset: 1.6rem;
-    margin-bottom: 4rem;
+    margin: 4rem 0;
   }
 `;
 
@@ -38,14 +38,16 @@ export const TextWrapper = styled.div`
 export const InternalLink = styled(Link)`
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
   text-underline-offset: 0.4rem;
-  font-size: 1.5rem;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
+  font-size: 2rem;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 0.6rem;
+  cursor: pointer;
 
   svg {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     transition: all 0.3s ease-in-out;
   }
 

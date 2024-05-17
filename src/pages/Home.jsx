@@ -7,7 +7,7 @@ import Emoji from "../components/Emoji";
 import UpcomingProjectsList from "../components/UpcomingProjectsList";
 
 // Icons
-import { Github, Linkedin, Medium, ArrowRight } from "react-bootstrap-icons";
+import { Github, Linkedin, Medium, ArrowRightCircleFill } from "react-bootstrap-icons";
 
 // Global styling
 import { InternalLink } from "../styling/GlobalStyling";
@@ -58,7 +58,9 @@ const Icons = styled.div`
   }
 `;
 const Section = styled.div`
-  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
 `;
 
 function Home() {
@@ -118,11 +120,11 @@ function Home() {
         <Section>
           <InternalLink to="/portfolio">
             Portfolio
-            <ArrowRight color="#252525" size={40} title="ArrowRight" />
+            <ArrowRightCircleFill color="#252525" size={40} title="ArrowRight" />
           </InternalLink>
           <InternalLink to="/about">
             About me
-            <ArrowRight color="#252525" size={40} title="ArrowRight" />
+            <ArrowRightCircleFill color="#252525" size={40} title="ArrowRight" />
           </InternalLink>
         </Section>
       </motion.div>

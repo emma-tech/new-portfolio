@@ -15,7 +15,7 @@ function Experience() {
   return (
     <>
       <PageTitle>Experience</PageTitle>
-      <p>What I&apos;ve been doing for the past 7+ years: </p>
+      <p>This is what I&apos;ve been doing for the past 7+ years: </p>
       <div className="experience">
         <VerticalTimeline lineColor="var(--purple)">
           <VerticalTimelineElement
