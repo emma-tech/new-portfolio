@@ -1,4 +1,6 @@
-
+// Images Current projects
+import Minimark from "../assets/minimark_flowers.png"
+import RhymeRiver from "../assets/teaser_rhyme_river.png";
 
 // Images Web/UX projects
 import Yoga from "../assets/mockup-yoga.jpeg";
@@ -125,7 +127,7 @@ export const Projects = [
 export const CurrentProjects = [
   {
     name: "Rhyme River Productions",
-    image: Yoga,
+    image: RhymeRiver,
     tags: "Branding & Identity | UX/UI | Frontend",
     imageAlt: "Teaser for Rhyme River project",
     skills:
@@ -138,7 +140,7 @@ export const CurrentProjects = [
   },
   {
     name: "Minimark & Trädgård AB",
-    image: Yoga,
+    image: Minimark,
     imageAlt: "Marigold flowers",
     tags: "Branding & Identity | UX/UI | Frontend",
     skills:
