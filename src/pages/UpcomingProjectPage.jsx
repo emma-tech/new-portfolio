@@ -76,6 +76,7 @@ function UpcomingProjectPage() {
 
   return (
     <>
+     <BackButton></BackButton>
       <ProjectWrapper>
         <PageTitle> {upcomingProject.name}</PageTitle>
         <ProjectImg
@@ -100,7 +101,6 @@ function UpcomingProjectPage() {
           alt={upcomingProject.image2Alt}
         />
       </ProjectWrapper>
-      <BackButton></BackButton>
     </>
   );
 }
