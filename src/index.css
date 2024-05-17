@@ -1,6 +1,7 @@
-/* Star Here */
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap");
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/* Styling */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 html {
@@ -17,12 +18,13 @@ html {
 }
 
 :root {
-  --black: #252525;
-  --white: #fffbf9;
+  --black: #121212;
+  --white: #fffefd;
   --peach: #ffbe98;
-  --peachlight: #ffe2cc;
-  --peachextralight: #fff0e5;
-  --pink: #ff9f98;
+  --lightpeach: #ffe2cc;
+  --purple: #645cff;
+  --lightpurple: #e9e6ff;
+  --lightyellow: #fff6e6;
 }
 
 *:focus-visible {
@@ -33,39 +35,57 @@ html {
   box-shadow: 0 0 0 4px var(--black);
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Space Mono", monospace;
   font-weight: 400;
+  font-size: 16px;
   min-height: 100vh;
   color: var(--black);
   background-color: var(--white);
 }
 
-h1 {
-  margin: 2rem 0 0.5rem 0;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-}
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: 2rem;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p,
 ::placeholder {
-  font-family: "Work Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
+  font-family: "Space Mono", monospace;
 }
 
 a {
+  font-size: 1rem;
   color: var(--black);
 }
 
@@ -77,29 +97,41 @@ code {
 /* Timeline */
 .vertical-timeline {
   margin-top: 2em;
-  padding: 6em 0;
+  padding: 3em 0 6em 0;
+}
+
+.vertical-timeline-element {
+  margin: 4em 0;
+}
+
+.vertical-timeline-element a {
+  display: flex;
+  align-items: center;
 }
 
 .vertical-timeline-element-content {
-  background-color: var(--peachextralight);
+  background-color: #e9e6ff;
   color: var(--black);
   border-radius: 0;
-  box-shadow: 10px 10px 0 var(--peach);
+  box-shadow: 10px 10px 0 #645cff;
 }
 
 .vertical-timeline-element-content h2 {
   color: var(--black);
+  font-size: 1.2rem;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1rem;
 }
 
 .vertical-timeline-element-content-arrow {
- /* border: 7px solid transparent; */
- /* border-right: 7px solid var(--peachlight); */
   display: none;
 }
 
 .vertical-timeline-element-icon {
   box-shadow: none;
-  background-color: var(--black);
+  background-color: #645cff;
   width: 30px;
   height: 30px;
   margin-top: 10px;

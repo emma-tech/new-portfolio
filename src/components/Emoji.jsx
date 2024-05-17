@@ -1,14 +1,14 @@
-function Emoji ({label, symbol}) {
-  return(
+function Emoji({ label, symbol }) {
+  return (
     <span
-        className="emoji"
-        role="img"
-        aria-label={label ? label : ""}
-        aria-hidden={label ? "false" : "true"}
+      className="emoji"
+      role="img"
+      aria-label={label ? label : ""}
+      aria-hidden={label ? "false" : "true"}
     >
-        {symbol}
+      {symbol}
     </span>
-);
+  );
 }
 
 export default Emoji;
