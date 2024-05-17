@@ -1,5 +1,5 @@
 // Images Current projects
-import Minimark from "../assets/minimark.png";
+import Minimark from "../assets/teaser_Rhyme_River.png";
 import RhymeRiver from "../assets/teaser_Rhyme_River.png";
 
 // Images Web/UX projects
