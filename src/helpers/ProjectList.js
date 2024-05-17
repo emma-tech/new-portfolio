@@ -1,6 +1,6 @@
 // Images Current projects
 import Minimark from "../assets/minimark_flowers.png"
-import RhymeRiver from "../assets/teaser_rhyme_river.png";
+import RhymeRiver from "../assets/rhyme_river.png"
 
 // Images Web/UX projects
 import Yoga from "../assets/mockup-yoga.jpeg";
