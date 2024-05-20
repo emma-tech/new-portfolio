@@ -9,7 +9,7 @@ import RegionÖstergötland from "../assets/rog_folktandvarden.png";
 import SBAB from "../assets/SBAB.png";
 import Nassjo from "../assets/nassjo.png";
 import Medster from "../assets/medster.png";
-import Thingtesting from "../assets/mockup_thingtesting.png";
+import Thingtesting from "../assets/thingtesting_mockup.jpeg";
 import Thingtesting2 from "../assets/mockup_thingtesting2.png";
 
 export const Projects = [
