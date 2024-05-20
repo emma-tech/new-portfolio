@@ -69,6 +69,7 @@ const LogoImg = styled.img.attrs(({ src }) => ({
   alt: "Logo",
 }))`
   width: 80px;
+  height: 100%;
   object-fit: cover;
 `;
 
