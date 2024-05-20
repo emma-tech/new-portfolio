@@ -23,7 +23,7 @@ export const ProjectImg = styled.img.attrs(({ src, alt }) => ({
   alt: alt,
 }))`
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
 `;

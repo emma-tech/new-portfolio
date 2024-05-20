@@ -68,7 +68,7 @@ const AboutImg = styled.img.attrs(({ src }) => ({
   alt: "Emma profile picture",
 }))`
   width: 40vw;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   box-shadow: 10px 10px 0 var(--lightpurple);
 
