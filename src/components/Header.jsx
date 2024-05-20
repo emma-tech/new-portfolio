@@ -114,6 +114,7 @@ const StyledLink = styled(NavLink)`
 
   @media screen and (min-width: 1024px) {
     margin: 0 0 0 4rem;
+    font-size: 1.2rem;
   }
 `;
 
